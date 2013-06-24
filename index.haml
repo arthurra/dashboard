@@ -1,4 +1,4 @@
-!!!5
+!!! 5
 %html
   %head
     %title Dashboard
@@ -6,4 +6,40 @@
     %meta{:charset => "utf-8"}
     %meta{:content => "width=device-width", :name => "viewport"}
 
-  %body
+    
+
+    %link{:href => "css/foundation.min.css"}
+    %link{:href => "css/normalize.css"}
+    %link{:href => "css/style.css"}
+
+  %body{:onload => "clock();"}
+    .time
+      %h1#timeHours 4
+      %h1 
+        %span :
+      %h1#timeMinutes 20
+      %br
+      %h2#weekday monday
+      %h2#date march 10
+    .weather
+      %h2#current-temp
+    .search
+      :javascript
+        (function() {
+          var cx = '011946006750706968025:y2v2fddtsn0';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+              '//www.google.com/cse/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+      <gcse:search></gcse:search>
+    .to-do
+    .bookmarks
+
+    %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"}
+    %script{:src => "js/foundation.min.js"}
+    %script{:src => "js/clock-ck.js"}
+    %script{:src => "js/weather-ck.js"}

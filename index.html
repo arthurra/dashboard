@@ -4,6 +4,44 @@
     <title>Dashboard</title>
     <meta charset='utf-8'>
     <meta content='width=device-width' name='viewport'>
+    <link href='css/foundation.min.css'>
+    <link href='css/normalize.css'>
+    <link href='css/style.css'>
   </head>
-  <body></body>
+  <body onload='clock();'>
+    <div class='time'>
+      <h1 id='timeHours'>4</h1>
+      <h1>
+        <span>:</span>
+      </h1>
+      <h1 id='timeMinutes'>20</h1>
+      <br>
+      <h2 id='weekday'>monday</h2>
+      <h2 id='date'>march 10</h2>
+    </div>
+    <div class='weather'>
+      <h2 id='current-temp'></h2>
+    </div>
+    <div class='search'>
+      <script>
+        (function() {
+          var cx = '011946006750706968025:y2v2fddtsn0';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+              '//www.google.com/cse/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+      <gcse:search></gcse:search>
+    </div>
+    <div class='to-do'></div>
+    <div class='bookmarks'></div>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js'></script>
+    <script src='js/foundation.min.js'></script>
+    <script src='js/clock-ck.js'></script>
+    <script src='js/weather-ck.js'></script>
+  </body>
 </html>

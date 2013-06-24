@@ -1,0 +1,1 @@
+$(document).ready(function(){$.ajax({url:"http://api.wunderground.com/api/b4cb03d2871dd142/geolookup/conditions/forecast/q/OH/Cincinnati.json",dataType:"jsonp",success:function(e){var t=e.location.city,n=e.current_observation.temp_f,r=e.current_observation.weather;document.getElementById("current-temp").innerHTML=n+"°"+"and"+" "+r}})});
