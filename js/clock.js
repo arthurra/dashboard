@@ -20,8 +20,8 @@ function clock() {
   
   document.getElementById('timeHours').innerHTML=hourStr;
   document.getElementById('timeMinutes').innerHTML=minStr;
-  document.getElementById('weekday').innerHTML=dayStr;
-  document.getElementById('date').innerHTML=monthStr+" "+dateStr;
+  // document.getElementById('weekday').innerHTML=dayStr;
+  document.getElementById('date').innerHTML=dayStr + " " + monthStr+" "+dateStr;
   setTimeout('clock()',1000);
 }
 clock();
