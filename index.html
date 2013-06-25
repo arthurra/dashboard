@@ -16,32 +16,46 @@
       </h1>
       <h1 id='timeMinutes'>20</h1>
       <br>
-      <h2 id='weekday'>monday</h2>
+      <!-- %h2#weekday monday -->
       <h2 id='date'>march 10</h2>
     </div>
     <div class='weather'>
       <h2 id='current-temp'></h2>
+      <img id='icon'>
+      <h3 id='current-condition'></h3>
+      <p id='foretxt'></p>
     </div>
-    <div class='search'>
-      <script>
-        (function() {
-          var cx = '011946006750706968025:y2v2fddtsn0';
-          var gcse = document.createElement('script');
-          gcse.type = 'text/javascript';
-          gcse.async = true;
-          gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-              '//www.google.com/cse/cse.js?cx=' + cx;
-          var s = document.getElementsByTagName('script')[0];
-          s.parentNode.insertBefore(gcse, s);
-        })();
-      </script>
-      <gcse:search></gcse:search>
+    <!-- .search -->
+    <!-- :javascript -->
+    <!-- (function() { -->
+    <!-- var cx = '011946006750706968025:y2v2fddtsn0'; -->
+    <!-- var gcse = document.createElement('script'); -->
+    <!-- gcse.type = 'text/javascript'; -->
+    <!-- gcse.async = true; -->
+    <!-- gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + -->
+    <!-- '//www.google.com/cse/cse.js?cx=' + cx; -->
+    <!-- var s = document.getElementsByTagName('script')[0]; -->
+    <!-- s.parentNode.insertBefore(gcse, s); -->
+    <!-- })(); -->
+    <!-- <gcse:search></gcse:search> -->
+    <div class='to-do'>
+      <h2>Things and stuff</h2>
     </div>
-    <div class='to-do'></div>
-    <div class='bookmarks'></div>
-    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js'></script>
-    <script src='js/foundation.min.js'></script>
-    <script src='js/clock-ck.js'></script>
-    <script src='js/weather-ck.js'></script>
+    <div class='bookmarks'>
+      <h2>Corners of the Internet</h2>
+      <div class='resources'>
+        <h3>Resources</h3>
+      </div>
+      <div class='inspiration'>
+        <h3>Inspiration</h3>
+      </div>
+      <div class='real-life'>
+        <h3>Real Life Junk</h3>
+      </div>
+    </div>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js' type='text/javascript'></script>
+    <script src='js/foundation.min.js' type='text/javascript'></script>
+    <script src='js/clock-ck.js' type='text/javascript'></script>
+    <script src='js/weather-ck.js' type='text/javascript'></script>
   </body>
 </html>
