@@ -11,43 +11,47 @@
     %link{:href => "css/main.css", :rel => "stylesheet"}
 
   %body{:onload => "clock();"}
-    .time
-      %h1#timeHours 4
-      %h1 
-        %span :
-      %h1#timeMinutes 20
-      %br
-      / %h2#weekday monday
-      %h2#date march 10
-    .weather
-      %h2#current-temp
-      %img#icon
-      %h3#current-condition
-      %p#foretxt
+    #weather.fixed
+      .weather
+        %h2#current-temp
+        %img#icon
+        %h3#current-condition
+        #foretxt
 
-    / .search
-    /   :javascript
-    /     (function() {
-    /       var cx = '011946006750706968025:y2v2fddtsn0';
-    /       var gcse = document.createElement('script');
-    /       gcse.type = 'text/javascript';
-    /       gcse.async = true;
-    /       gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-    /           '//www.google.com/cse/cse.js?cx=' + cx;
-    /       var s = document.getElementsByTagName('script')[0];
-    /       s.parentNode.insertBefore(gcse, s);
-    /     })();
-    /   <gcse:search></gcse:search>
-    .to-do
-      %h2 Things and stuff
-    .bookmarks
-      %h2 Corners of the Internet
-      .resources
-        %h3 Resources
-      .inspiration
-        %h3 Inspiration
-      .real-life
-        %h3 Real Life Junk
+      / .search
+      /   :javascript
+      /     (function() {
+      /       var cx = '011946006750706968025:y2v2fddtsn0';
+      /       var gcse = document.createElement('script');
+      /       gcse.type = 'text/javascript';
+      /       gcse.async = true;
+      /       gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+      /           '//www.google.com/cse/cse.js?cx=' + cx;
+      /       var s = document.getElementsByTagName('script')[0];
+      /       s.parentNode.insertBefore(gcse, s);
+      /     })();
+      /   <gcse:search></gcse:search>
+    #todo.fixed
+      .to-do
+        %h2 Things and stuff
+    #main
+      .time
+        %h1#timeHours 4
+        %h1 
+          %span :
+        %h1#timeMinutes 20
+        %br
+        / %h2#weekday monday
+        %h2#date march 10
+      
+      .bookmarks
+        %h2 Corners of the Internet
+        .resources
+          %h3 Resources
+        .inspiration
+          %h3 Inspiration
+        .real-life
+          %h3 Real Life Junk
 
     %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js", :type => "text/javascript"}
     %script{:src => "js/foundation.min.js", :type => "text/javascript"}

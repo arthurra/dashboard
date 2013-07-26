@@ -1,2 +1,26 @@
 .cse .gsc-search-button input.gsc-search-button-v2, input.gsc-search-button-v2 {
   box-sizing: content-box; }
+
+html, body, #todo, #weather, #main {
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 1s; }
+
+body {
+  margin: 0; }
+
+.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 1000; }
+
+#weather {
+  right: -80%;
+  background: yellow; }
+
+#todo {
+  left: -80%;
+  background: darkred; }
+
+#main {
+  background: lightblue; }
