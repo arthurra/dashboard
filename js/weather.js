@@ -25,8 +25,9 @@ $(document).ready(function() {
 
             var location = parsed_json['location']['city'];
             html = ""
-            var forecasttxt = parsed_json['forecast']['txt_forecast']['forecastday'].forEach(function(forecastday){
-                html = html + forecastday.title
+            var forecasttxt = parsed_json['forecast']['simpleforecast']['forecastday'].forEach(function(forecastday){
+                html = html + forecastday.high.fahrenheit + "°"
+
             });
 
             document.getElementById('foretxt').innerHTML=html;
